@@ -1,19 +1,18 @@
-body, html {
+body,
+html {
   margin: 0px;
   padding: 0px;
   border: 0px;
-  background-color: white;
+  background-color: #fff;
   width: 100%;
   height: 100%;
 }
-
-div#all-content{
+div#all-content {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
 }
-
-#play-canvas{
+#play-canvas {
   display: block;
 }
