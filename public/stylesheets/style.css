@@ -7,12 +7,85 @@ html {
   width: 100%;
   height: 100%;
 }
+body {
+  background-image: url("/images/bg.jpeg");
+  position: relative;
+}
 div#all-content {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
 }
-#play-canvas {
-  display: block;
+div.note-outer {
+  height: 220px;
+  width: 250px;
+  position: absolute;
+  left: 500px;
+  top: 300px;
+  -webkit-box-shadow: -2px 5px 16px #967048;
+  -moz-box-shadow: -2px 5px 16px #967048;
+  box-shadow: -2px 5px 16px #967048;
+  background: #e3da82;
+/* Old browsers */
+  background: -moz-linear-gradient(top, #e3da82 0%, #f1eaa2 11%, #f3eca6 50%, #f0eaa0 91%, #e6de88 100%);
+/* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e3da82), color-stop(11%, #f1eaa2), color-stop(50%, #f3eca6), color-stop(91%, #f0eaa0), color-stop(100%, #e6de88));
+/* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e3da82 0%, #f1eaa2 11%, #f3eca6 50%, #f0eaa0 91%, #e6de88 100%);
+/* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e3da82 0%, #f1eaa2 11%, #f3eca6 50%, #f0eaa0 91%, #e6de88 100%);
+/* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e3da82 0%, #f1eaa2 11%, #f3eca6 50%, #f0eaa0 91%, #e6de88 100%);
+/* IE10+ */
+  background: linear-gradient(to bottom, #e3da82 0%, #f1eaa2 11%, #f3eca6 50%, #f0eaa0 91%, #e6de88 100%);
+/* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3da82', endColorstr='#e6de88',GradientType=0 );
+/* IE6-9 */
+}
+div.note-inner {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+div.note-editable {
+  width: 80%;
+  height: 100%;
+}
+div.note-editable:focus {
+  outline: none;
+}
+div.note-buttons {
+  position: absolute;
+  top: -35px;
+  left: 0px;
+  background-color: #967048;
+  background-color: rgba(150,112,72,0.2);
+  width: 100%;
+  height: 30px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+div.note-buttons:hover {
+  cursor: move;
+}
+button {
+  position: relative;
+  top: 4px;
+  background: transparent;
+  border: solid 1px #967048;
+  color: #000;
+}
+button.embolden {
+  left: 5px;
+  font-weight: bold;
+}
+button.italicize {
+  margin-left: 10px;
+  font-style: italic;
+}
+button.delete-note {
+  position: absolute;
+  right: 10px;
 }
